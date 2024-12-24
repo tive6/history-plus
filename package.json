@@ -1,7 +1,7 @@
 {
   "name": "history-plus",
   "displayName": "History Plus",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "zmer",
   "description": "Chrome 历史记录增强插件",
   "type": "module",
