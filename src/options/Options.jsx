@@ -50,13 +50,14 @@ const columns = [
       'descend',
       // 'ascend'
     ],
-    defaultSortOrder: 'descend',
+    // defaultSortOrder: 'descend',
     sorter: (a, b) => a.visitCount - b.visitCount,
   },
   {
     title: '最后访问',
     dataIndex: 'lastVisitTime',
     width: 116,
+    defaultSortOrder: 'descend',
     sorter: (a, b) => a.lastVisitTime - b.lastVisitTime,
     render: (ms) => dayjs(ms).format('YYYY-MM-DD HH:mm:ss'),
   },
