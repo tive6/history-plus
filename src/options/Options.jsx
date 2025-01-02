@@ -275,7 +275,7 @@ export const Options = () => {
 
   return (
     <>
-      <main id="main-box" className="relative py-15px px-20px bg-white">
+      <main id="main-box" className="relative p-8px bg-white">
         <Form
           form={form}
           layout="inline"
@@ -320,7 +320,7 @@ export const Options = () => {
           border
           virtualized
           scroll={{
-            y: 'calc(100vh - 155px)',
+            y: 'calc(100vh - 140px)',
           }}
           columns={[...columns, actionColumn]}
           data={d.tableData}
