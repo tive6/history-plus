@@ -324,6 +324,7 @@ export const Options = () => {
           columns={[...columns, actionColumn]}
           data={d.tableData}
           expandedRowRender={expandedRowRender}
+          // pagination={false}
           pagination={{
             sizeCanChange: true,
             showTotal: true,
@@ -331,7 +332,7 @@ export const Options = () => {
             // total: 96,
             // pageSize: 10,
             // current: 1,
-            defaultPageSize: 20,
+            defaultPageSize: 50,
             sizeOptions: [20, 50, 100, 200, 500],
             pageSizeChangeResetCurrent: true,
           }}
