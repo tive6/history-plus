@@ -27,8 +27,14 @@ export default defineManifest({
   },
   content_scripts: [
     {
-      matches: ['http://*/*', 'https://*/*'],
-      js: ['src/contentScript/index.js'],
+      matches: [
+        'http://localhost/*',
+        // 'https://*/*'
+      ],
+      js: [
+        // '',
+        'src/contentScript/index.js',
+      ],
     },
   ],
   web_accessible_resources: [
@@ -37,8 +43,13 @@ export default defineManifest({
       matches: [],
     },
   ],
-  permissions: ['sidePanel', 'tabs', 'history'],
+  permissions: [
+    //
+    'sidePanel',
+    'history',
+  ],
   chrome_url_overrides: {
     history: 'options.html',
   },
+  host_permissions: ['http://localhost/*'],
 })
